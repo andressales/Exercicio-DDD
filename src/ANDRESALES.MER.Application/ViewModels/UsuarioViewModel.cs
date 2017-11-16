@@ -24,12 +24,19 @@ namespace ANDRESALES.MER.Application.ViewModels
         [MaxLength(80, ErrorMessage = "O campo sobrenome deve ter no máximo {0} caracteres.")]
         public string Sobrenome { get; set; }
 
-
+        [Required(ErrorMessage = "O campo CPF é requerido.")]
+        [StringLength(11, ErrorMessage = "CPF inválido.")]
         public string CPF { get; set; }
+
+        [ScaffoldColumn(false)]
         public DateTime DataCriacao { get; set; }
+
         public bool Ativo { get; set; }
 
-        //public ICollection<UsuarioPerfil> ListaPerfil { get; set; }
-        //public ICollection<Local> ListaLocal { get; set; }
+        [ScaffoldColumn(false)]
+        public ICollection<PerfilViewModel> ListaPerfil { get; set; }
+
+        [ScaffoldColumn(false)]
+        public ICollection<LocalViewModel> ListaLocal { get; set; }
     }
 }

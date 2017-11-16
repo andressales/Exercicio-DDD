@@ -60,14 +60,14 @@
     <Compile Include="Repository\Repository.cs" />
     <Compile Include="Repository\UsuarioPerfilRepository.cs" />
     <Compile Include="Repository\UsuarioRepository.cs" />
+    <Compile Include="UoW\IUnitOfWork.cs" />
+    <Compile Include="UoW\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UoW\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\ANDRESALES.MER.Domain\ANDRESALES.MER.Domain.csproj">
       <Project>{C75B593A-70C2-4E66-B8DF-8330E461B514}</Project>

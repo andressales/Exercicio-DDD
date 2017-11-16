@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace ANDRESALES.MER.Domain.Models
 {
@@ -12,7 +8,7 @@ namespace ANDRESALES.MER.Domain.Models
         {
             ListaUsuario = new List<UsuarioPerfil>();
             ListaAcesso = new List<Acesso>();
-    }
+        }
         public string Descricao { get; set; }
         public string Code { get; set; }
         public bool Ativo { get; set; }

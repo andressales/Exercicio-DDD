@@ -47,7 +47,7 @@ namespace ANDRESALES.MER.Infra.Data.Repository
             return _dbSet.Add(entity);
         }
 
-        public TEntity Atualizar(TEntity entity)
+        public virtual TEntity Atualizar(TEntity entity)
         {
             var entry = _db.Entry(entity);
             _dbSet.Attach(entity);
@@ -56,7 +56,7 @@ namespace ANDRESALES.MER.Infra.Data.Repository
             return entity;
         }
 
-        public void Remover(Guid id)
+        public virtual void Remover(Guid id)
         {
             var entity = new TEntity{ Id = id };
             _dbSet.Remove(entity);
