@@ -52,7 +52,7 @@
     <Compile Include="EntityConfig\LocalConfig.cs" />
     <Compile Include="EntityConfig\PerfilConfig.cs" />
     <Compile Include="EntityConfig\UsuarioConfig.cs" />
-    <Compile Include="EntityConfig\Usuario_Perfil_Config.cs" />
+    <Compile Include="EntityConfig\UsuarioPerfilConfig.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\AcessoRepository.cs" />
