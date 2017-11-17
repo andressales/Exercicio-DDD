@@ -18,7 +18,7 @@ namespace ANDRESALES.MER.Application.Interfaces
 
         ICollection<PerfilViewModel> ListarPerfis(Guid IdUsuario);
         ICollection<PerfilViewModel> AdicionarPerfil(Guid IdUsuario, Guid IdPerfil);
-        ICollection<PerfilViewModel> RemoverPerfil(Guid IdUsuario, Guid IdPerfil);
+        void RemoverPerfil(Guid _idUsuario, Guid _idPerfil);
 
         ICollection<LocalViewModel> ListarLocais(Guid IdUsuario);
         ICollection<LocalViewModel> AdicionarLocal(Guid IdUsuario, Guid IdLocal);

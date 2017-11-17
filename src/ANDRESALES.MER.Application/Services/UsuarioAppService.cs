@@ -76,12 +76,12 @@ namespace ANDRESALES.MER.Application.Services
 
         public ICollection<PerfilViewModel> AdicionarPerfil(Guid IdUsuario, Guid IdPerfil)
         {
-            throw new NotImplementedException();
+            _usuarioPerfilRepository.Adicionar();
         }
 
-        public ICollection<LocalViewModel> RemoverLocal(Guid IdUsuario, Guid IdLocal)
+        public void RemoverLocal(Guid _idUsuario, Guid _idPerfil)
         {
-            throw new NotImplementedException();
+            _usuarioPerfilRepository.Remover(_idUsuario, _idPerfil);
         }
 
         public ICollection<PerfilViewModel> RemoverPerfil(Guid IdUsuario, Guid IdPerfil)
