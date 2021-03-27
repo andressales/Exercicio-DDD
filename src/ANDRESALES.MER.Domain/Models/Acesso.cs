@@ -12,7 +12,7 @@ namespace ANDRESALES.MER.Domain.Models
         public string Descricao { get; set; }
         public bool Ativo { get; set; }
 
-        public Guid IdPerfil { get; set; }
+        public Guid IdPerfil { get; internal set; }
         public Perfil Perfil { get; set; }
     }
 }
